@@ -1,6 +1,6 @@
 name: First-actions-test
 on: workflow_dispatch
-Jobs:
+Job:
    First_job_test:
    runson: ubuntu-latest
    steps:
