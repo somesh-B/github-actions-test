@@ -7,6 +7,6 @@ jobs:
      - name: Print Nginx information and cpu information
        run:  |
             echo "Printing system information and nginx service status"
-            cat /etc/cpuinfo
+            cat /proc/cpuinfo
             systemctl status nginx
             cat /etc/*-release
