@@ -8,5 +8,5 @@ jobs:
        run:  |
             echo "Printing system information and nginx service status"
             cat /proc/cpuinfo
-            systemctl status nginx
+            sudo systemctl start nginx
             cat /etc/*-release
