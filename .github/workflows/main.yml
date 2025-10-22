@@ -1,0 +1,12 @@
+name: Second Job Test
+on: workflow_dispatch
+jobs:
+  second_job:
+   runson: ubuntu-latest
+   steps:
+     - name: Print Nginx information and cpu information
+       run:  |
+            echo "Printing system information and nginx service status"
+            cat /etc/cpuinfo
+            systemctl status nginx
+            cat /etc/*-release
