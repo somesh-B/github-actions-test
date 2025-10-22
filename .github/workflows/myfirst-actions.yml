@@ -4,9 +4,14 @@ jobs:
    First_job_test:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-           echo "Hello world"
-           echo "This is my first github actions im testing"
+     - name: Print Hello world
+       run: echo "hello world"
+     - name: Print System info
+       run : cat /etc/*-release
+     - name: Print Number of cpu in the runners
+       run: cat /proc/cpuinfo
+     - name: Install Nginx service and start it
+       run: apt-get update && apt-get install nginx && systemctl status nginx
        
      
       
