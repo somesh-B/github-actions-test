@@ -2,9 +2,9 @@ name: First-actions-test
 on: workflow_dispatch
 jobs:
    First_job_test:
-   runs-on: ubuntu-latest
-   steps:
-     run: |
+    runs-on: ubuntu-latest
+    steps:
+      run: |
        echo "Hello world"
        echo "This is my first github actions im testing"
        
