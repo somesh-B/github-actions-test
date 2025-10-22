@@ -2,7 +2,7 @@ name: First-actions-test
 on: workflow_dispatch
 jobs:
    First_job_test:
-   runson: ubuntu-latest
+   runs-on: ubuntu-latest
    steps:
      run: |
        echo "Hello world"
