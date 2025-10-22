@@ -11,7 +11,7 @@ jobs:
      - name: Print Number of cpu in the runners
        run: cat /proc/cpuinfo
      - name: Install Nginx service and start it
-       run: apt-get update && apt-get install nginx && systemctl status nginx
+       run: sudo apt-get update && sudo apt install nginx && systemctl status nginx
        
      
       
